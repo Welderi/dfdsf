@@ -1,0 +1,89 @@
+body.page1 {
+    background-image: url('../images/Page2Image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.page2 {
+    background-image: url('../images/Page1Image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.page3 {
+    background-image: url('../images/Page3Image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #94c1ff; 
+    padding-bottom: 200px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 71, 118, 0.8);
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #fff;
+    font-family: "Times New Roman", Times, serif;
+}
+
+h2 {
+    color: #004776;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.animated-title span {
+    display: inline-block;
+    opacity: 0;
+    color: #94c1ff;
+    vertical-align: middle;
+    font: italic small-caps bold 80px/2 cursive;
+    animation: fly-in 0.5s forwards;
+}
+
+@keyframes fly-in {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.intro, .features, .usage {
+    margin-bottom: 20px;
+}
+
+.features ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 71, 118, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
