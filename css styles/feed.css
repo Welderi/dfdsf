@@ -1,0 +1,109 @@
+body {
+    background: linear-gradient(to bottom, #6da7d6, #1b3d6d);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #ffffff;
+}
+
+.animated-title {
+    display: inline-block;
+    animation: fly-in 0.5s forwards;
+}
+
+.animated-title span {
+    display: inline-block;
+    opacity: 0;
+    color: #ffffff;
+    vertical-align: middle;
+    font: italic small-caps bold 160px/2 cursive;
+    animation: fly-in 0.5s forwards;
+}
+
+@keyframes fly-in {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #ffffff;
+}
+
+main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 40px 0;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    margin: 40px auto;
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: block;  
+}
+
+textarea {
+    resize: vertical; 
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1b3d6d;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    width: 100%; 
+}
+
+button:hover {
+    background-color: #6da7d6;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    bottom: 0;
+    padding: 20px 0;
+    color: #ffffff;
+    position: relative;
+}
+
+#datetime {
+    font-size: 18px;
+}

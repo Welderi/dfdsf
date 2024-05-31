@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="ISO 8859-2">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../css styles/feed.css">
+    <script src="../js scripts/mainScript.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="animated-title"><span>F</span><span>e</span><span>e</span><span>d</span><span>b</span><span>a</span><span>c</span><span>k</span></h1>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form action="submit_feedback.php" method="post">
+                <label for="firstname">Jméno:</label>
+                <input type="text" id="firstname" name="firstname" required>
+                
+                <label for="lastname">Příjmení:</label>
+                <input type="text" id="lastname" name="lastname" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="year">Ročník:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="note">Poznámka:</label>
+                <textarea id="note" name="note" rows="4" required></textarea>
+                
+                <button type="submit">Odeslat</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p id="datetime"></p>
+    </footer>
+</body>
+</html>
